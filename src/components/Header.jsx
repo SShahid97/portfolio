@@ -38,12 +38,12 @@ function Header({appTitle}) {
                        </Link> 
                        
                     </li>
-                    <li  className='flex flex-col items-center px-2 py-4  '>
+                    {/* <li  className='flex flex-col items-center px-2 py-4  '>
                         <Link  href="#" onClick={() => scrollTo('home')} className='hover:border-b-2 ' > 
-                            Resources
+                            About
                         </Link>
                       
-                    </li>
+                    </li> */}
                     <li className='flex flex-col items-center px-2 py-4  '>
                         <Link  href="#" onClick={() => scrollTo('contact')} className='hover:border-b-2 ' >
                             Contact
@@ -71,14 +71,14 @@ function Header({appTitle}) {
                         Projects
                        </Link> 
                     </li>
-                    <li className='p-5'>
+                    {/* <li className='p-5'>
                         <Link  href="#" onClick={() =>{
                             scrollTo('home')
                             setToggle(!toggle)
                         }} > 
-                        Resources
+                        About
                         </Link>
-                    </li>
+                    </li> */}
                     <li className='p-5'>
                         <Link  href="#" onClick={() =>{ 
                             scrollTo('contact')
