@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
-function Banner(props) {
+function Banner({introduction, jobTitle}) {
     const skills = [
         'Javascript', 
         'Typescript',
@@ -22,9 +22,9 @@ function Banner(props) {
         <div id="home" className='bg-[#2699fb] w-full py-20'>
             <div className='max-w-[1000px] font-bold my-11 mx-auto text-center'>
                 <div className='text-xl md:text-3xl md:p-[24px]'>
-                    Hello, my name is Shahid and I am a  
+                    {introduction} 
                 </div>
-                <h2 className='text-white text-3xl md:text-[60px] md:p-[24px]'>Software Developer</h2>
+                <h2 className='text-white text-3xl md:text-[60px] md:p-[24px]'>{jobTitle}</h2>
                 <div className='text-[20px] md:text-[50px] md:p-[24px] text-white'>
                    My Skills:
                     <Typed
