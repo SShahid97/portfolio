@@ -6,10 +6,11 @@ import Plans from './components/Projects';
 // import NewLetter from './components/NewLetter';
 // import Experts from './components/Experts';
 import {BrowserRouter as Router} from "react-router-dom";
+
 function App() {
   // constants
   const appTitle = "MalikShahid";
-  const footerBio = "I am a Software Developer, currently working as a front-end developer at GraphicWeave, Srinagar from the last 1 year.";
+  const footerBio = "I am a Software Developer, currently working as a front-end developer at GraphicWeave Srinagar, Kashmir from last one year.";
 
   return (
    <>
@@ -19,6 +20,7 @@ function App() {
       {/* <Experts/>
       <NewLetter/> */}
       <Plans/>
+      {/* <Timer/> */}
       <Footer appTitle={appTitle} footerBio={footerBio}/>
     </Router>
    </>

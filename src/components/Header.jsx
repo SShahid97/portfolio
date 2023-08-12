@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
+import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Header({appTitle}) {
@@ -14,7 +15,7 @@ function Header({appTitle}) {
     };
 
     return (
-        <div className='bg-[#2699fb] shadow-sm p-1 sticky left-0 top-0 z-1000'>
+        <div style={{zIndex:"1000"}} className='bg-[#2699fb] shadow-sm p-1 sticky left-0 top-0 '>
             <div className='max-w-[1000px] py-[12px] items-center flex justify-between mx-auto'>
                 <div className='pl-3 md:pl-0 text-2xl fond-bold'>
                     {appTitle}
@@ -88,6 +89,15 @@ function Header({appTitle}) {
                     </li>
                 </ul>
             </div>
+
+            <div className='whatsapp'>
+                <a className="whatsapp-for-desktop" href="https://web.whatsapp.com/send?phone=+919622572247" target="_blank" rel="noopener noreferrer" title='Contact Us'>
+                <FaWhatsapp/>
+                </a>
+                <a className="whatsapp-for-mobile" href="https://wa.me/+919622572247" target="_blank" rel="noopener noreferrer" title='Contact Us'>
+                <FaWhatsapp/>
+                </a>
+          </div>
         </div>
     ); 
 }

@@ -14,11 +14,12 @@ function Banner(props) {
         'Nestjs',
         'MongoDB',
         'SQL',
-        'Python'
+        'Python',
+        'Outsystems'
     ];
 
     return (
-        <div id="home" className='bg-[#2699fb] w-full py-[100px]'>
+        <div id="home" className='bg-[#2699fb] w-full py-20'>
             <div className='max-w-[1000px] font-bold my-11 mx-auto text-center'>
                 <div className='text-xl md:text-3xl md:p-[24px]'>
                     Hello, my name is Shahid and I am a  
