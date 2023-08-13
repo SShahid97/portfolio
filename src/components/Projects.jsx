@@ -13,11 +13,11 @@ function Projects(props) {
          id="projects" 
         className="flex justify-center  text-3xl md:text-4xl py-3"
       >
-        My Projects
+        Projects
       </div>
       <div 
        
-        className="md:py-20 px-2">
+        className="md:py-20 px-2 border-[#2699fb] border-b-[1px]">
         <div className="max-w-[1000px] mx-auto md:grid grid-cols-3 gap-5">
           <ProjectCard
             title="E-BookStore"

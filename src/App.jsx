@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
+import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
@@ -74,6 +75,7 @@ function App() {
         <Banner  introduction={introduction} jobTitle={jobTitle}/>
         <About about = {about}  />
         <Projects />
+        <Certifications/>
         <Footer appTitle={appTitle} footerBio={footerBio} />
       </Router>
     </>

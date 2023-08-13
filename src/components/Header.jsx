@@ -42,7 +42,11 @@ function Header({appTitle}) {
                        <Link  href="#" onClick={() => scrollTo('projects')} className='hover:border-b-2 ' >
                         Projects
                        </Link> 
-                       
+                    </li>
+                    <li className='flex flex-col items-center px-2 py-4'>
+                       <Link  href="#" onClick={() => scrollTo('certifications')} className='hover:border-b-2 ' >
+                        Certifications
+                       </Link> 
                     </li>
                     <li className='flex flex-col items-center px-2 py-4  '>
                         <Link  href="#" onClick={() => scrollTo('contact')} className='hover:border-b-2 ' >
@@ -78,6 +82,14 @@ function Header({appTitle}) {
                              setToggle(!toggle)
                             }}>
                         Projects
+                       </Link> 
+                    </li>
+                    <li className='p-5'>
+                        <Link  href="#" onClick={() => {
+                             scrollTo('certifications')
+                             setToggle(!toggle)
+                            }}>
+                        Certifications
                        </Link> 
                     </li>
                     <li className='p-5'>
