@@ -10,11 +10,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   // constant
-  const introduction = "Hello, I'm Shahid and I am a";
+  const introduction = "Hello, my name is Shahid, I am a";
   const jobTitle="Software Developer";
   const appTitle = "MalikShahid";
   const footerBio =
-    "I am a Software Developer, currently working as a front-end developer at GraphicWeave Srinagar, Kashmir from last one year.";
+    "I am a Software Developer, currently working as a front-end developer at GraphicWeave Srinagar, Kashmir.";
   const about = [
     {
       paragraph: `👋My name is Shahid, a passionate software developer with a keen interest in crafting elegant and efficient solutions in the world of technology. Welcome to my corner of the digital universe!`,

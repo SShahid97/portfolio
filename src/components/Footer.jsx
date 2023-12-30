@@ -11,7 +11,7 @@ function Footer({ appTitle, footerBio }) {
        <div id="contact" className="bg-[#2699fb] w-full">
         <div className="max-w-[1000px] p-2 mx-auto  md:grid grid-cols-3">
         <div className="flex flex-col justify-between col-span-1 gap-2">
-          <h1 className="text-2xl font-bold my-2">{appTitle}</h1>
+          <h1 className="text-2xl font-bold my-2 text-white">{appTitle}</h1>
           <p className="my-2 text-white md:text-sm text-lg ">{footerBio}</p>
           <div className="flex justify-between text-white w-[100%] md:w-[80%] ">
             {/* mailto:sshahidmalik97@gmail.com */}

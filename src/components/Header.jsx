@@ -18,7 +18,16 @@ function Header({appTitle}) {
         <div style={{zIndex:"1000"}} className='bg-[#2699fb] shadow-sm p-1 sticky left-0 top-0 '>
             <div className='max-w-[1000px] py-[12px] items-center flex justify-between mx-auto'>
                 <div className='pl-3 md:pl-0 text-2xl fond-bold'>
-                    {appTitle}
+                    <div className='flex justify-start items-center gap-2 text-white'>
+                        <img 
+                            src='https://img.freepik.com/premium-vector/people-saving-money_24908-51569.jpg'
+                            alt='profile'
+                            width={40}
+                            height={40}
+                            style={{borderRadius: 1000}}    
+                        />
+                        {appTitle}
+                    </div>
                 </div>
                 { toggle ? 
                     <AiOutlineClose  onClick={()=>setToggle(!toggle)} className='md:hidden block text-white text-3xl'/>
@@ -28,28 +37,28 @@ function Header({appTitle}) {
                 
                 <ul className='hidden md:flex  text-white gap-5'>
                     <li  className='flex flex-col items-center px-2 py-4 '>
-                        <Link  href="#" onClick={() => scrollTo('home')} className='hover:border-b-2 ' >
+                        <Link  href="#" onClick={() => scrollTo('home')} className='border-b-2 border-b-[#2699fb] hover:border-b-white' >
                             Home
                         </Link>
                     </li>
                     <li  className='flex flex-col items-center px-2 py-4  '>
-                        <Link  href="#" onClick={() => scrollTo('about')} className='hover:border-b-2 ' > 
+                        <Link  href="#" onClick={() => scrollTo('about')} className='border-b-2 border-b-[#2699fb] hover:border-b-white ' > 
                             About
                         </Link>
                       
                     </li>
                     <li className='flex flex-col items-center px-2 py-4'>
-                       <Link  href="#" onClick={() => scrollTo('projects')} className='hover:border-b-2 ' >
+                       <Link  href="#" onClick={() => scrollTo('projects')} className='border-b-2 border-b-[#2699fb] hover:border-b-white' >
                         Projects
                        </Link> 
                     </li>
                     <li className='flex flex-col items-center px-2 py-4'>
-                       <Link  href="#" onClick={() => scrollTo('certifications')} className='hover:border-b-2 ' >
+                       <Link  href="#" onClick={() => scrollTo('certifications')} className='border-b-2 border-b-[#2699fb] hover:border-b-white' >
                         Certifications
                        </Link> 
                     </li>
                     <li className='flex flex-col items-center px-2 py-4  '>
-                        <Link  href="#" onClick={() => scrollTo('contact')} className='hover:border-b-2 ' >
+                        <Link  href="#" onClick={() => scrollTo('contact')} className='border-b-2 border-b-[#2699fb] hover:border-b-white' >
                             Contact
                         </Link>
                        
