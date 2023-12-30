@@ -66,10 +66,10 @@ function Header({appTitle}) {
                 </ul>
 
                 {/* Responsive Menue */}
-                <ul className={`duration-300 md:hidden w-full h-screen text-2xl text-white fixed bg-[#2699fb]
+                <ul className={`duration-300 md:hidden w-full h-screen text-xl text-white fixed bg-[#2699fb]
                     ${toggle ? 'left-[0]':'left-[-100%]'}  top-[65px]`}>
-                    <li className='p-5' onClick={()=>setToggle(!toggle)}>
-                        <Link  href="#" onClick={() => { 
+                    <li className='border-b-white border-b' onClick={()=>setToggle(!toggle)}>
+                        <Link className='block w-full p-4'  href="#" onClick={() => { 
                             scrollTo('home') 
                             setToggle(!toggle)
                             } }>
@@ -77,32 +77,32 @@ function Header({appTitle}) {
                         </Link>
                     </li>
                     
-                    <li className='p-5'>
-                        <Link  href="#" onClick={() =>{
+                    <li className='border-b-white border-b'>
+                        <Link className='block w-full p-4' href="#" onClick={() =>{
                             scrollTo('about')
                             setToggle(!toggle)
                         }} > 
                         About
                         </Link>
                     </li>
-                    <li className='p-5'>
-                        <Link  href="#" onClick={() => {
+                    <li className=' border-b-white border-b'>
+                        <Link className='block w-full p-4' href="#" onClick={() => {
                              scrollTo('projects')
                              setToggle(!toggle)
                             }}>
                         Projects
                        </Link> 
                     </li>
-                    <li className='p-5'>
-                        <Link  href="#" onClick={() => {
+                    <li className=' border-b-white border-b'>
+                        <Link className='block w-full p-4' href="#" onClick={() => {
                              scrollTo('certifications')
                              setToggle(!toggle)
                             }}>
                         Certifications
                        </Link> 
                     </li>
-                    <li className='p-5'>
-                        <Link  href="#" onClick={() =>{ 
+                    <li className=' border-b-white border-b'>
+                        <Link className='block w-full p-4'  href="#" onClick={() =>{ 
                             scrollTo('contact')
                             setToggle(!toggle)
                         }}>

@@ -8,7 +8,7 @@ const About = ({about}) => {
       >
         About
       </div>
-      <div className="flex flex-col max-w-[1000px] md:mx-auto mx-3 gap-15 md:gap-1 text-justify">
+      <div className="flex flex-col max-w-[1000px] md:mx-auto mx-3 gap-1 text-justify">
         {about && about.map((paragraph)=>{
             return (
               <div 
