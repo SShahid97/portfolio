@@ -17,7 +17,7 @@ function Projects(props) {
       </div>
       <div 
        
-        className="md:py-20 px-2 border-[#2699fb] border-b-[1px]">
+        className="md:py-20 px-2 border-primary border-b-[1px]">
         <div className="max-w-[1000px] mx-auto md:grid grid-cols-3 gap-5">
           <ProjectCard
             title="E-BookStore"

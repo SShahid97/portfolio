@@ -2,7 +2,7 @@ import React from "react";
 
 const About = ({about}) => {
   return (
-    <div id="about" className="py-10 border-[#2699fb] border-b-[1px]">
+    <div id="about" className="py-10 border-primary border-b-[1px]">
       <div
         className="flex justify-center  text-3xl md:text-4xl mb-5"
       >
@@ -20,7 +20,7 @@ const About = ({about}) => {
                   md:mb-0
                   rounded-2xl 
                   p-4 
-                  border-gray-200 
+                  border-gray
                   border 
                   shadow-lg 
                   even:self-end

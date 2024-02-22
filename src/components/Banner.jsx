@@ -9,17 +9,17 @@ function Banner({introduction, jobTitle}) {
         'Tailwind CSS',
         'React',
         'React Native',
+        'Nextjs',
         'Redux-toolkit',
         'RTK Query',
         'Nodejs',
         'MongoDB',
         'SQL',
         'Python',
-        'Outsystems'
     ];
 
     return (
-        <div id="home" className='bg-[#2699fb] w-full py-20'>
+        <div id="home" className='bg-primary w-full py-20'>
             <div className='max-w-[1000px] font-bold my-11 mx-auto text-center'>
                 <div className='text-xl md:text-3xl md:p-[24px]'>
                     {introduction} 

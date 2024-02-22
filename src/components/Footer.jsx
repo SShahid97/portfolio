@@ -3,40 +3,44 @@ import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { MdMailOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Timer from "./Timer";
 
 function Footer({ appTitle, footerBio }) {
   return (
     <>
-       <div id="contact" className="bg-[#2699fb] w-full">
+       <div id="contact" className="bg-primary w-full">
         <div className="max-w-[1000px] p-2 mx-auto  md:grid grid-cols-3">
         <div className="flex flex-col justify-between col-span-1 gap-2">
-          <h1 className="text-2xl font-bold my-2 text-white">{appTitle}</h1>
-          <p className="my-2 text-white md:text-sm text-lg ">{footerBio}</p>
+          <div>
+            <h1 className="text-2xl font-bold my-2 text-white">{appTitle}</h1>
+            <p className="my-2 text-white md:text-sm text-lg ">{footerBio}</p>
+          </div>
           <div className="flex justify-between text-white w-[100%] md:w-[80%] ">
             {/* mailto:sshahidmalik97@gmail.com */}
             <Link
               className="p-1 rounded-md hover:shadow-xl"
-              to={"https://mail.google.com/mail/?view=cm&fs=1&to="}
+              to={"https://mail.google.com/mail/?view=cm&fs=1&to=sshahidmalik97@gmail.com"}
+              target="_blank"
             >
               <SiGmail className="text-2xl " />
             </Link>
             <Link
               className="p-1 hover:shadow-xl"
               to={"https://www.linkedin.com/in/shahidshowkatmalik"}
+              target="_blank"
             >
               <FaLinkedinIn className="text-2xl" />
             </Link>
             <Link
               className="p-1 hover:shadow-xl"
               to={"https://github.com/SShahid97"}
+              target="_blank"
             >
-              <FaGithubSquare className="text-2xl" />
+              <FaGithubSquare className="text-3xl" />
             </Link>
           </div>
-          <div >
+          {/* <div >
           <Timer/>
-          </div>
+          </div> */}
         </div>
         <div className="col-span-2 mt-2 p-3 flex flex-row justify-between bg-white">
           <iframe
@@ -55,7 +59,7 @@ function Footer({ appTitle, footerBio }) {
     <div className="flex justify-center items-center text-gray-700 text-sm">
       <Link 
         className="flex justify-center items-center"
-        to={"https://mail.google.com/mail/?view=cm&fs=1&to="}
+        to={"https://mail.google.com/mail/?view=cm&fs=1&to=sshahidmalik97@gmail.com"}
         >
         <MdMailOutline size={20}/>  <span style={{marginLeft:"7px"}}>  sshahidmalik97@gmail.com</span>
       </Link>
