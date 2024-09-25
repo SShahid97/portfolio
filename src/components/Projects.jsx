@@ -9,14 +9,15 @@ import LetUsChat from "../assets/img/LetUsChat.jpeg";
 function Projects(props) {
   return (
     <>
-      <div
-         id="projects" 
-        className="flex justify-center  text-3xl md:text-4xl py-3"
-      >
-        Projects
+      <div  id="projects" className="flex flex-col justify-center items-center mt-2"  >
+        <div
+          className="flex justify-center  text-3xl md:text-4xl mb-3"
+        >
+          Projects
+        </div>
+        <div className="w-20 p-0.5 bg-primary mb-10" />
       </div>
       <div 
-       
         className="md:py-20 px-2 border-primary border-b-[1px]">
         <div className="max-w-[1000px] mx-auto md:grid grid-cols-3 gap-5">
           <ProjectCard

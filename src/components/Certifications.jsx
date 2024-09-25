@@ -9,11 +9,13 @@ import Freecodecamplogo from "../assets/img/fcc_secondary_small.png";
 const Certifications = () => {
   return (
     <>
+      <div  id="certifications" className="flex flex-col justify-center items-center mt-2"  >
         <div
-         id="certifications" 
-        className="flex justify-center  text-3xl md:text-4xl py-3"
-      >
-        Certifications
+          className="flex justify-center  text-3xl md:text-4xl mb-3"
+        >
+          Certifications
+        </div>
+        <div className="w-28 p-0.5 bg-primary mb-10" />
       </div>
       <div 
        

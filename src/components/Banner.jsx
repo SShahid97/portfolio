@@ -1,23 +1,8 @@
 import React from 'react';
 import Typed from 'react-typed';
-function Banner({introduction, jobTitle}) {
-    const skills = [
-        'Javascript', 
-        'Typescript',
-        'HTML',
-        'CSS',
-        'Tailwind CSS',
-        'React',
-        'React Native',
-        'Nextjs',
-        'Redux-toolkit',
-        'RTK Query',
-        'Nodejs',
-        'MongoDB',
-        'SQL',
-        'Python',
-    ];
+import { skills } from '../data/static';
 
+function Banner({introduction, jobTitle}) {
     return (
         <div id="home" className='bg-primary w-full py-20'>
             <div className='max-w-[1000px] font-bold my-11 mx-auto text-center'>
