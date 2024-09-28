@@ -5,19 +5,13 @@ import ReactLogo from "../assets/img/React-icon.png";
 import ScoreCricket from "../assets/img/Cricket.png";
 import EbookStore from "../assets/img/EbookStore.png";
 import LetUsChat from "../assets/img/LetUsChat.jpeg";
+import SectionHeader from "./SectionHeader";
 
-function Projects(props) {
+function Projects() {
   return (
     <>
-      <div  id="projects" className="flex flex-col justify-center items-center mt-2"  >
-        <div
-          className="flex justify-center  text-3xl md:text-4xl mb-3"
-        >
-          Projects
-        </div>
-        <div className="w-20 p-0.5 bg-primary mb-10" />
-      </div>
-      <div 
+      <SectionHeader sectionId="projects" title="Projects" />
+      <section 
         className="md:py-20 px-2 border-primary border-b-[1px]">
         <div className="max-w-[1000px] mx-auto md:grid grid-cols-3 gap-5">
           <ProjectCard
@@ -39,7 +33,7 @@ function Projects(props) {
             link={"https://github.com/SShahid97/ChatApp"}
           />
         </div>
-      </div>
+      </section>
     </>
   );
 }

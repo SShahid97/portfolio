@@ -22,16 +22,16 @@ function Header({appTitle}) {
       };
 
     return (
-        <div style={{zIndex:"1000"}} className='bg-primary shadow-sm p-1 sticky left-0 top-0 '>
+        <header style={{zIndex:"1000"}} className='bg-primary shadow-sm p-1 sticky left-0 top-0 '>
             <div className='max-w-[1000px] py-[12px] items-center flex justify-between mx-auto'>
                 <Logo appTitle={appTitle}/>
                 {toggle ? 
-                    <AiOutlineClose  onClick={()=>setToggle(!toggle)} className='md:hidden block text-white text-3xl'/>
+                    <AiOutlineClose onClick={()=>setToggle(!toggle)} className='md:hidden block text-white text-3xl'/>
                     :
                     <AiOutlineMenu onClick={()=>setToggle(!toggle)} className='md:hidden block text-white text-3xl'/>
                 }
-                
-                <ul className='hidden md:flex  text-white gap-5'>
+
+                <ul className='hidden md:flex  text-white gap-x-2'>
                     {headerLinks.map((item)=>{
                         return (
                             <HeaderLink key={item.link} onClick={() => scrollTo(item.link)} title={item.title}/>
@@ -67,13 +67,13 @@ function Header({appTitle}) {
 
             <div className='whatsapp'>
                 <a className="whatsapp-for-desktop" href="https://web.whatsapp.com/send?phone=+919622572247" target="_blank" rel="noopener noreferrer" title='Contact Us'>
-                <FaWhatsapp/>
+                    <FaWhatsapp/>
                 </a>
                 <a className="whatsapp-for-mobile" href="https://wa.me/+919622572247" target="_blank" rel="noopener noreferrer" title='Contact Us'>
-                <FaWhatsapp/>
+                    <FaWhatsapp/>
                 </a>
           </div>
-        </div>
+        </header>
     ); 
 }
 

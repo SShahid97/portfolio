@@ -12,6 +12,10 @@ export const headerLinks = [
         link: 'projects'
     },
     {
+      title: 'Experience',
+      link: 'experience'
+    },
+    {
         title: 'Certifications',
         link: 'certifications'
     },
@@ -95,3 +99,28 @@ export const skills = [
     'MongoDB',
     'SQL',
 ];
+
+export const experience = [
+  {
+    companyName:"NyurTech",
+    address:"Srinagar, Jammu & Kashmir",
+    companyUrl: "https://nyurtech.com",
+    role:"Frontend Developer",
+    period:"April 2024 - Present",
+    description: [
+      `At NyurTech, I spearheaded the implementation of two projects, showcasing expertise in: Reactjs, TypeScript, Redux Toolkit, RTK Query and Material UI.`,
+      `Additionally, I seamlessly integrated APIs to enhance project functionality, ensuring smooth user experiences and efficient data management.`
+    ]
+  },
+  {
+    companyName:"GraphicWeave",
+    companyUrl: "https://www.graphicweave.com",
+    address:"Srinagar, Jammu & Kashmir",
+    role:"Frontend Developer",
+    period:"September 2022 - April 2024",
+    description: [
+      `At GraphicWeave, I took part in the development two projects, showcasing expertise in: Reactjs, Nextjs, TypeScript, Redux Toolkit, RTK Query, Ant Design and Chakra UI.`,
+      `Additionally, I seamlessly integrated APIs to enhance project functionality, ensuring smooth user experiences and efficient data management.`
+    ]
+  }
+]

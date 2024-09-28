@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import { about, appTitle, footerBio, introduction, jobTitle } from "./data/static";
+import Experience from "./components/Experience";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Header appTitle={appTitle}  />
         <Banner  introduction={introduction} jobTitle={jobTitle}/>
         <About about = {about}  />
+        <Experience />
         <Projects />
         <Certifications/>
         <Footer appTitle={appTitle} footerBio={footerBio} />

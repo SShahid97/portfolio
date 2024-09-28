@@ -5,20 +5,13 @@ import JavascriptCertificate from "../assets/img/JavascriptCertificate.png";
 import JavascriptAlgosAndDSCertificate from "../assets/img/JavascriptAlgosAndDSCertificate.png";
 import HackerRankIcon from "../assets/img/HackerRankIcon.png";
 import Freecodecamplogo from "../assets/img/fcc_secondary_small.png";
+import SectionHeader from './SectionHeader';
 
 const Certifications = () => {
   return (
     <>
-      <div  id="certifications" className="flex flex-col justify-center items-center mt-2"  >
-        <div
-          className="flex justify-center  text-3xl md:text-4xl mb-3"
-        >
-          Certifications
-        </div>
-        <div className="w-28 p-0.5 bg-primary mb-10" />
-      </div>
-      <div 
-       
+      <SectionHeader sectionId="certifications" title="Certifications" />
+      <section        
         className="md:py-20 px-2 ">
         <div className="max-w-[1000px] mx-auto md:grid grid-cols-3 gap-5">
           <CertificationCard
@@ -40,7 +33,7 @@ const Certifications = () => {
             link={CSSCertificate}
           />
         </div>
-      </div>
+      </section>
     </>
   )
 }

@@ -1,17 +1,12 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const About = ({about}) => {
   return (
-    <div id="about" className="py-10 border-primary border-b-[1px]">
-      <div className="flex flex-col justify-center items-center"  >
-        <div
-          className="flex justify-center  text-3xl md:text-4xl mb-3"
-        >
-          About
-        </div>
-        <div className="w-16 p-0.5 bg-primary mb-10" />
-      </div>
-      <div className="flex flex-col max-w-[1000px] md:mx-auto mx-3 gap-1 text-justify">
+    <>
+      <SectionHeader sectionId="about" title="About" />
+      <section className="pt-6 pb-10 border-primary border-b-[1px]">
+        <div className="flex flex-col max-w-[1000px] md:mx-auto mx-3 gap-1 text-justify">
         {about && about.map((paragraph)=>{
             return (
               <div 
@@ -43,8 +38,9 @@ const About = ({about}) => {
             )
         })}
        
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   );
 };
 
