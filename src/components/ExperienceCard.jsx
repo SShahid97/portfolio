@@ -48,7 +48,6 @@ const ExperienceCard = ({
         </ul>
       </div>
     </div>
-    // </Link>
   );
 };
 

@@ -124,3 +124,70 @@ export const experience = [
     ]
   }
 ]
+
+export const projects = [
+  {
+    projectName:"Dawat Book",
+    techStack: [
+       'React', 'Redux Toolkit', 'RTK query', 'Material UI'
+    ],
+    description: [
+      `Led the development of an e-commerce cum event planning and gift management system for festivals and other occasions. Developing both the public user interface and the admin panel user interface.`,
+      `Seamlessly integrated APIs to enhance project functionality, ensuring smooth user experiences and
+efficient data management.`
+    ]
+  },
+  {
+    projectName:"Middleware",
+    techStack: [
+       'React', 'Redux Toolkit', 'RTK query', 'Material UI'
+    ],
+    description: [
+      `Led the development of an optimally effective API-driven system that allows data exchange between and across multiple applications and systems and acts as a holistic entity to manage, maintain and support processes in the domain - using multiple API’s under a single umbrella. Also implemented the role based access feature distinguishing between different admin roles and merchants.`,
+      `Seamlessly integrated APIs to enhance project functionality, ensuring smooth user experiences and
+efficient data management.`
+    ]
+  },
+  {
+    projectName:"Influnaire",
+    techStack: [
+       'React', 'Redux Toolkit', 'RTK query', 'Antd'
+    ],
+    description: [
+      `Actively took part in the development of a multifaceted influencer-brand collaboration platform, distinguishing between admin,
+influencer, and brand user roles. Responsibilities included designing an intuitive interface for seamless navigation
+and implementing robust features such as campaign creation and comprehensive administrative controls.`,
+      `Integrated APIs to enhance project functionality, ensuring smooth user experiences and
+efficient data management. Integrated advanced data visualization tools into dynamic dashboards, offering real-time insights into influencer
+performance metrics and campaign analytics across various social media platforms, facilitating informed
+decision-making for brands.`
+    ]
+  },
+  {
+    projectName:"YourYoda",
+    techStack: [
+       'Next.js', 'Redux Toolkit', 'RTK query', 'Chakra UI'
+    ],
+    description: [
+      `Played a crucial role in the development of a web-based mentorship platform tailored for mentors and mentees.
+Responsibilities included collaborating with stakeholders to define the platform’s scope, implementing robust user
+authentication with role-based access, integrating real-time communication features for remote mentorship
+sessions, and incorporating scheduling functionalities to streamline appointment management.`,
+      `Conducted extensive testing and debugging to ensure optimal platform functionality and performance, addressing
+issues promptly to enhance user experience and reliability. Seamlessly integrated APIs to enhance project functionality, ensuring smooth user experiences and
+efficient data management.`
+    ]
+  },
+  {
+    projectName:"WabiSabi Store",
+    techStack: [
+       'React Native', 'Redux Toolkit', 'RTK query'
+    ],
+    description: [
+      `Developed a cross-platform e-commerce app with React Native, handling UI components, navigation, and backend
+API integration for product listings, authentication, and payments.`,
+      `Seamlessly integrated APIs to enhance project functionality, ensuring smooth user experiences and
+efficient data management.`
+    ]
+  },
+]
