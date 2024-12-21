@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 const About = ({about}) => {
   return (
     <>
-      <SectionHeader sectionId="about" title="About Me" />
+      <SectionHeader sectionId="about" title="About" />
       <section className="pt-6 pb-10 border-primary border-b-[1px]">
         <div className="flex flex-col max-w-[1000px] md:mx-auto mx-3 gap-1 text-justify">
         {about && about.map((paragraph)=>{
